@@ -5,6 +5,8 @@ import About from '../components/About'
 import FirstQuote from '../components/FirstQuote'
 import Icons from '../components/Icons'
 import SecondQuote from '../components/SecondQuote'
+import ThreeCards from '../components/ThreeCards'
+import Prices from '../components/Prices'
 
 const Home = () => {
     return (
@@ -15,6 +17,8 @@ const Home = () => {
             <FirstQuote />
             <Icons />
             <SecondQuote />
+            <ThreeCards />
+            <Prices />
         </>
     )
 }

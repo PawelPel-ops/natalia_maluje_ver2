@@ -18,7 +18,7 @@ const Hero = () => {
                 <HeroContainer>
                     <HeroContent>
                         <Header>Najszczęśliwsze kobiety zawsze mają najpiękniejsze paznokcie</Header>
-                        <Btn>Sprawdź jak zostać najszczęśliwszą kobietą</Btn>
+                        <Btn to="/">Sprawdź jak zostać najszczęśliwszą kobietą</Btn>
                         <ContactWrapper>
                             <Tel>570 878 028</Tel>
                             <SocialIcon>
