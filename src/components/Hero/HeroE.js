@@ -4,7 +4,7 @@ import back_img from '../../images/background_stylizacja9.jpg'
 
 export const HeroSection = styled.section`
     background: url(${back_img}) center;
-    width: 100vw;
+    max-width: 100vw;
     height: calc(100vh - 60px);
     display: flex;
     align-items: center;
