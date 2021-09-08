@@ -11,6 +11,8 @@ import Contact from '../components/Contact'
 import Gallery from '../components/Gallery'
 import Modal from '../components/Gallery/Modal'
 import { Images } from '../components/Gallery/GalleryData'
+import Comments from '../components/Comments'
+import Footer from '../components/Footer'
 
 const Home = () => {
     const [selectedImg, setSelectedImg] = useState(null);
@@ -29,6 +31,8 @@ const Home = () => {
             <Contact />
             <Gallery setSelectedImg={setSelectedImg} setSelectedIndex={setSelectedIndex} Images={Images}/>
             { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} selectedIndex={selectedIndex} Images={Images}/> }
+            <Comments />
+            <Footer />
         </>
     )
 }
