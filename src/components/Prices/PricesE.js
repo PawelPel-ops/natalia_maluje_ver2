@@ -90,6 +90,6 @@ export const Price = styled.span`
 export const Images = styled.img`
     position: absolute;
     width: 150px;
-    bottom: 0;
+    bottom: -10%;
     left: 10%;
 `
