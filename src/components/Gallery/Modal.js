@@ -51,7 +51,7 @@ const Modal = ( { selectedImg, setSelectedImg, selectedIndex, Images } ) => {
                     <NextIconBox ref={next} onClick={handleNext}>
                         <MdKeyboardArrowRight />
                     </NextIconBox>
-                    <LargeImg src={selectedImg} alt='enlarged pic' width="auto" height="auto"/>
+                    <LargeImg src={selectedImg} alt='Stylizacja Paznokci Ostrzeszów Natalia Piotrowicz' width="auto" height="auto"/>
                 </LargeImgWrapper>
             </ModalSection>
         </>

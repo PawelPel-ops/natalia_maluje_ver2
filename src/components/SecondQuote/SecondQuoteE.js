@@ -17,6 +17,14 @@ export const SecondQuoteContent = styled.div`
 
 export const Header = styled.h2`
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: normal;
+
+    @media screen and (max-width: 1200px){
+        font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 1.4rem;
+    }
 `

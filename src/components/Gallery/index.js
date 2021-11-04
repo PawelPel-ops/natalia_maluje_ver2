@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Images } from './GalleryData'
 import {
     GallerySection,
     GalleryContainer,
@@ -15,7 +14,7 @@ const Gallery = ( { setSelectedImg, setSelectedIndex, Images } ) => {
     
     return (
         <>
-            <GallerySection>
+            <GallerySection id='linkToGaleria'>
                 <GalleryContainer>
                     <GalleryContent>
                         <Header>Stylizacja paznokci - wzory</Header>
@@ -24,7 +23,7 @@ const Gallery = ( { setSelectedImg, setSelectedIndex, Images } ) => {
                                 return (
                                     <Box key={index} onClick={() => setSelectedIndex(index)}>
                                         <ImgWrapper onClick={() => setSelectedImg(element.src)}>
-                                            <Img src={element.src} alt="Stylizacja Paznokcie Natalia Piotrowicz" width="300px" height="300px"/>
+                                            <Img src={element.src} alt="Stylizacja Paznokci Ostrzeszów Natalia Piotrowicz" width="300px" height="300px"/>
                                         </ImgWrapper>
                                     </Box>
                                 )

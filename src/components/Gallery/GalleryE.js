@@ -17,34 +17,115 @@ export const GalleryContent = styled.div`
     justify-content: center;
     flex-direction: column;
     margin: 100px 50px;
+
+    @media screen and (max-width: 768px){
+        margin: 100px 20px;
+    }
 `
 
 export const Header = styled.h2`
     font-size: 2rem;
     font-weight: normal;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1200px){
+        font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 1.2rem;
+    }
 `
 
 export const ImagesWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 200px;
-    gap: 10px;
+    gap: 2px;
+
+    @media screen and (max-width: 1024px){
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 480px){
+        grid-template-columns: repeat(2, 1fr);
+    }
 `
 
 export const Box = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
+    border: 2px solid #9c7194;
 
     &:first-child{
         grid-column: span 2;
         grid-row: span 2;
+
+        @media screen and (max-width: 480px){
+            grid-column: span 1;
+            grid-row: span 1;
+        }
     }
 
-    &:nth-child(6) {
+
+    &:nth-child(8) {
+        grid-column: span 1;
+        grid-row: span 1;
+
+        @media screen and (max-width: 768px){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        @media screen and (max-width: 480px){
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+
+    &:nth-child(11) {
         grid-column: span 2;
         grid-row: span 2;
+
+        @media screen and (max-width: 1024px){
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+
+    &:nth-child(12) {
+        grid-column: span 1;
+        grid-row: span 1;
+
+        @media screen and (max-width: 1024px){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        @media screen and (max-width: 768px){
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+
+    &:nth-child(13) {
+        grid-column: span 1;
+        grid-row: span 1;
+
+        @media screen and (max-width: 768px){
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        @media screen and (max-width: 480px){
+            grid-column: span 1;
+            grid-row: span 1;
+        }
     }
 `
 
@@ -57,8 +138,8 @@ export const ImgWrapper = styled.div`
 export const Img = styled.img`
     width: 100%;
     height: 100%;
-    object-fit: cover;
     -o-object-fit: cover;
+    object-fit: cover;
     transition: all .25s ease;
     cursor: pointer;
     opacity: .8;
@@ -111,9 +192,7 @@ export const CLoseIconBox = styled.div`
     transition: all .25s ease;
 
     &:hover {
-        font-size: 3.5rem;
-        top: 1%;
-        right: 1.5%;
+        transform: scale(1.4);
     }
 `
 
@@ -125,8 +204,11 @@ export const PrevIconBox = styled.div`
     transition: all .25s ease;
 
     &:hover {
-        font-size: 3.5rem;
-        top: 49%;
+        transform: scale(1.4);
+    }
+
+    @media screen and (max-width: 480px){
+        left: 0;
     }
 `
 
@@ -138,8 +220,11 @@ export const NextIconBox = styled.div`
     transition: all .25s ease;
 
     &:hover {
-        font-size: 3.5rem;
-        top: 49%;
+        transform: scale(1.4);
+    }
+
+    @media screen and (max-width: 480px){
+        right: 0;
     }
 `
 

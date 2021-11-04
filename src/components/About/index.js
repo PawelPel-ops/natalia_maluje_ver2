@@ -22,7 +22,7 @@ const About = () => {
                     <AboutContent>
                         <ImagesWrapper>
                             <Background />
-                            <Images src={abi}/>
+                            <Images src={abi} alt='Stylizacja paznokci Natalia AboutMe'/>
                             <Border />
                         </ImagesWrapper>
                         <ContentWrapper>

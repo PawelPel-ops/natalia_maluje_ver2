@@ -29,7 +29,7 @@ export const PricesDetails = [
     },
     {
         n: 'Zdobienia (w zależności od stopnia trudności)',
-        p: '+ 5-20zł'
+        p: '+5-20zł'
     },
     {
         n: 'French/babyboomer',

@@ -24,8 +24,16 @@ export const FirstQuoteContent = styled.div`
 
 export const Header = styled.h2`
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: normal;
     text-align: center;
-    margin: 70px auto;
+    margin: 70px 30px;
+
+    @media screen and (max-width: 1200px){
+        font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 1.4rem;
+    }
 `

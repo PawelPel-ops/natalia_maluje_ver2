@@ -12,10 +12,10 @@ import {
 const Contact = () => {
     return (
         <>
-            <ContactSection>
+            <ContactSection id='linkToKontakt'>
                 <ContactContainer>
                     <ContactContent>
-                        <Images src={sty}/>
+                        <Images src={sty} alt="Stylizacja Paznokci NAtalia Contact"/>
                         <ContactWrapper>
                             <Text>W razie pytań i umówienia terminu zapraszam do kontaktu:</Text>
                             <Text>570 878 028</Text>

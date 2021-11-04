@@ -7,6 +7,10 @@ export const NavSection = styled.section`
     justify-content: center;
     width: 100%;
     height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 `
 
 export const NavContainer = styled.div`
@@ -21,20 +25,32 @@ export const NavContent = styled.div`
 `
 
 export const LogoWrapper = styled.div`
-    margin: 0 50px;
+    margin-left: 30px;
+
+    @media screen and (max-width: 480px){
+        margin: 0;
+    }
 `
 
 export const Logo = styled.img`
     height: 60px;
+
+    @media screen and (max-width: 1024px){
+        height: 50px;
+    }
 `
 
 export const BurgerWrapper = styled.div`
-    margin: 0 50px;
-    cursor: pointer;
     display: none;
 
     @media screen and (max-width: 768px){
         display: block;
+        margin: 0 30px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 480px){
+        margin: 0 10px;
     }
 `
 
@@ -62,7 +78,7 @@ export const Line = styled.div`
 
 export const MenuWrapper = styled.ul`
     display: flex;
-    margin: 0 50px;
+    margin: auto 30px;
     list-style: none;
 
     @media screen and (max-width: 768px){
@@ -131,4 +147,10 @@ export const MenuElement = styled.li`
     }
 `
 
-export const LinkS = styled(Link)``
+export const LinkS = styled(Link)`
+    font-size: 1.1rem;
+
+    @media screen and (max-width: 1024px){
+        font-size: 1rem;
+    }
+`

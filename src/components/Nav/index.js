@@ -34,19 +34,48 @@ const Nav = () => {
                         </BurgerWrapper>
                         <MenuWrapper open={open}>
                             <MenuElement>
-                                <LinkS to='/'>O mnie</LinkS>
+                                <LinkS 
+                                    to='linkToOferta'
+                                    smooth={true} 
+                                    duration={500} 
+                                    spy={true} 
+                                    exact='true' 
+                                    offset={-60} 
+                                    onClick={() => setOpen(false)}
+                                >Oferta</LinkS>
                             </MenuElement>
                             <MenuElement>
-                                <LinkS to='/'>Oferta</LinkS>
+                                <LinkS 
+                                    to='linkToCennik'
+                                    smooth={true} 
+                                    duration={500} 
+                                    spy={true} 
+                                    exact='true' 
+                                    offset={0} 
+                                    onClick={() => setOpen(false)}
+                                >Cennik</LinkS>
                             </MenuElement>
                             <MenuElement>
-                                <LinkS to='/'>Cennik</LinkS>
+                                <LinkS 
+                                    to='linkToGaleria'
+                                    smooth={true} 
+                                    duration={500} 
+                                    spy={true} 
+                                    exact='true' 
+                                    offset={0} 
+                                    onClick={() => setOpen(false)}
+                                >Galeria</LinkS>
                             </MenuElement>
                             <MenuElement>
-                                <LinkS to='/'>Galeria</LinkS>
-                            </MenuElement>
-                            <MenuElement>
-                                <LinkS to='/'>Kontakt</LinkS>
+                                <LinkS 
+                                    to='linkToKontakt'
+                                    smooth={true} 
+                                    duration={500} 
+                                    spy={true} 
+                                    exact='true' 
+                                    offset={0} 
+                                    onClick={() => setOpen(false)}
+                                >Kontakt</LinkS>
                             </MenuElement>
                         </MenuWrapper>
                     </NavContent>

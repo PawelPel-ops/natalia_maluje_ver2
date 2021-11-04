@@ -20,15 +20,15 @@ import l1 from '../../images/l1.png'
 const ThreeCards = () => {
     return (
         <>
-            <ThreeCardsSection>
+            <ThreeCardsSection id='linkToOferta'>
                 <ThreeCardsContainer>
                     <ThreeCardsContent>
                         {Cards.map((element, index) =>{
                             return (
                                 <Box key={index}>
                                     <ImageWrapper>
-                                        <Background />
-                                        <Image src={element.src} />
+                                        <Background className='background'/>
+                                        <Image src={element.src} className='image' alt='Stylizacja Paznokci Natalia ThreeCards'/>
                                         <Border />
                                     </ImageWrapper>
                                     <ContentWrapper>
@@ -41,7 +41,7 @@ const ThreeCards = () => {
                     </ThreeCardsContent>
                 </ThreeCardsContainer>
                 <OpacityText>BEUT</OpacityText>
-                <IconS src={l1} />
+                <IconS src={l1} alt="Stylizacja Paznokci Natalia lakier"/>
             </ThreeCardsSection>
         </>
     )

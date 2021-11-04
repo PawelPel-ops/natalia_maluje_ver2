@@ -18,7 +18,7 @@ import l2 from '../../images/l2.png'
 const Prices = () => {
     return (
         <>
-            <PricesSection>
+            <PricesSection id='linkToCennik'>
                 <PricesContainer>
                     <PricesContent>
                         <Wrapper>
@@ -36,7 +36,7 @@ const Prices = () => {
                         <SecondBorder />
                     </PricesContent>
                 </PricesContainer>
-                <Images src={l2} />
+                <Images src={l2} alt="Stylizacja Paznokci Natalia Lakier Cennik"/>
             </PricesSection>
         </>
     )

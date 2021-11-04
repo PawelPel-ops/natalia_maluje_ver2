@@ -4,32 +4,35 @@ export const PricesSection = styled.section`
     background-color: #f3e8f0;
     display: fex;
     justify-content: center;
-    // overflow: hidden;
+    overflow: hidden;
     position: relative;
 `
 
 export const PricesContainer = styled.div`
     max-width: 1300px;
     width: 100%;
-    height: 100%;
-    margin: 100px 50px;
-    // position: relative;
+    margin: 100px 50px 150px;
 `
 
 export const PricesContent = styled.div`
-    // width: 100%;
-    height: 680px;
     position: relative;
+    display: flex;
+    justify-content: center;
 `
 
 export const Wrapper = styled.div`
-    width: 100%;
+    width: 80%;
     height: 100%;
     background-color: #9c7194;
-    padding: 50px;
-    position: absolute;
+    padding: 40px;
+    position: relative;
     z-index: 2;
     border-radius: 10px;
+
+    @media screen and (max-width: 768px){
+        width: 90%;
+        padding: 20px;
+    }
 `
 
 export const FirstBorder = styled.div`
@@ -37,7 +40,7 @@ export const FirstBorder = styled.div`
     position: absolute;
     top: -100px;
     left: -100px;
-    width: 100%;
+    width: 90%;
     height: 50%;
 `
 
@@ -80,16 +83,41 @@ export const Box = styled.div`
 export const Name = styled.span`
     color: #fff;
     padding: 10px;
+
+    @media screen and (max-width: 1024px){
+        font-size: .9rem;
+        padding: 6px;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: .8rem;
+        padding: 6px 4px;
+    }
 `
 
 export const Price = styled.span`
     color: #fff;
     padding: 10px;
+    
+    @media screen and (max-width: 1024px){
+        font-size: .9rem;
+        padding: 6px;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: .8rem;
+        padding: 6px 4px;
+    }
 `
 
 export const Images = styled.img`
     position: absolute;
-    width: 150px;
-    bottom: -10%;
+    width: 130px;
+    bottom: 0;
     left: 10%;
+
+    @media screen and (max-width: 768px){
+        width: 100px;
+        bottom: 2%;
+    }
 `

@@ -42,22 +42,12 @@ const Comments = () => {
                     <CommentsContent>
                         <CommentsHeader>Tak oceniają mnie dziewczyny, które mi zaufały:</CommentsHeader>
                         <CommentsWrapper>
-                            {/* {AllComments.map((obj, index) => {
-                                return(
-                                    <Box key={index}>
-                                        <Content>{obj.des}</Content>
-                                        <Name>{obj.name}</Name>
-                                        <Avatar src={obj.src} />
-                                        <QuoteSymbol>"</QuoteSymbol>
-                                    </Box>
-                                )
-                            })} */}
                             <Box>
-                                        <Content>{AllComments[currentComment].des}</Content>
-                                        <Name>{AllComments[currentComment].name}</Name>
-                                        <Avatar src={AllComments[currentComment].src} />
-                                        <QuoteSymbol>"</QuoteSymbol>
-                                    </Box>
+                                <Content>{AllComments[currentComment].des}</Content>
+                                <Name>{AllComments[currentComment].name}</Name>
+                                <Avatar src={AllComments[currentComment].src} alt='Stylizacja Paznokci Natalia Opinie'/>
+                                <QuoteSymbol>"</QuoteSymbol>
+                            </Box>
                         </CommentsWrapper>
                         <PrevArrowBox onClick={prevComment}>
                             <MdKeyboardArrowLeft />

@@ -21,10 +21,10 @@ const Icons = () => {
                         {IconsD.map((element, index) => {
                             return (
                                 <Box key={index}>
-                                    <SvgWrapper>
-                                        <Image src={element.src}/>
+                                    <SvgWrapper className='wrapper'>
+                                        <Image src={element.src} className='image' alt='Stylizacja Paznokci Natalia Icons'/>
                                     </SvgWrapper>
-                                    <Text>{element.text}</Text>
+                                    <Text className='tekst'>{element.text}</Text>
                                 </Box>
                             )
                         })}

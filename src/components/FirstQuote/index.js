@@ -12,7 +12,7 @@ const FirstQuote = () => {
     return (
         <>
             <FirstQuoteSection>
-                <FirstQuoteImages src={fqi}/>
+                <FirstQuoteImages src={fqi} alt='Stylizacja paznokci Natalia FirstQuote'/>
                 <FirstQuoteContainer>
                     <FirstQuoteContent>
                         <Header>Zadbane i wystylizowane paznokcie są dla kobiety niczym elegancka biżuteria</Header>
